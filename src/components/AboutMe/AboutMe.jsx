@@ -1,5 +1,5 @@
 import React from "react";
-import Potato from "./Potato";
+import Potato from "../Potato/Potato";
 
 export default class AboutMe extends React.Component {
   render() {

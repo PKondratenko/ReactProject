@@ -6,7 +6,7 @@ export default class Potato extends React.Component {
       <div className="potato">
         <figure>
           <img
-            src={require("../imgPotato/items.jpg")}
+            src={require("../../imgPotato/items.jpg")}
             alt="Необходимые предметы"
           />
           <figcaption>
@@ -28,7 +28,7 @@ export default class Potato extends React.Component {
 
         <figure>
           <img
-            src={require("../imgPotato/hole.jpg")}
+            src={require("../../imgPotato/hole.jpg")}
             alt="Делаем отверстие в картошке"
           />
           <figcaption>
@@ -43,7 +43,7 @@ export default class Potato extends React.Component {
         </figure>
         <figure>
           <img
-            src={require("../imgPotato/establish.jpg")}
+            src={require("../../imgPotato/establish.jpg")}
             alt="Решетка из зубочисток"
           />
           <figcaption>
@@ -56,7 +56,7 @@ export default class Potato extends React.Component {
         </figure>
         <figure>
           <img
-            src={require("../imgPotato/plant.jpg")}
+            src={require("../../imgPotato/plant.jpg")}
             alt="Укладывает табак и одеваем на шахту"
           />
           <figcaption>
@@ -69,7 +69,7 @@ export default class Potato extends React.Component {
         </figure>
         <figure>
           <img
-            src={require("../imgPotato/try.jpg")}
+            src={require("../../imgPotato/try.jpg")}
             alt="Прогреваем и пробуем"
           />
           <figcaption>
@@ -86,7 +86,7 @@ export default class Potato extends React.Component {
         </figure>
         <figure>
           <img
-            src={require("../imgPotato/tasting.jpg")}
+            src={require("../../imgPotato/tasting.jpg")}
             alt="Тестируем на людях"
           />
           <figcaption>

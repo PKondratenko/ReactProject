@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/index.scss";
+import "../../styles/gameXO.scss";
 
 export default class GameXO extends React.Component {
   constructor(props) {
