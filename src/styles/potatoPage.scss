@@ -1,0 +1,20 @@
+.potato {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  figure {
+    display: flex;
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+  }
+  p {
+    padding-left: 5px;
+    margin: 0;
+  }
+}
+
+img {
+  width: 30%;
+  height: 30%;
+}

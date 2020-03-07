@@ -1,0 +1,18 @@
+.gameXO {
+  width: 150px;
+  height: 150px;
+  border: 2px solid black;
+  margin: 50px auto;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.blockGame {
+  box-sizing: border-box;
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
