@@ -1,0 +1,12 @@
+.error {
+  color: rgb(255, 0, 0);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+
+  svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+  }
+}

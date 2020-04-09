@@ -1,0 +1,14 @@
+@mixin indent($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
+}
+
+@mixin flex() {
+  display: flex;
+}
+
+@mixin hover-color($color: #e8fa42) {
+  &:hover {
+    color: $color;
+  }
+}

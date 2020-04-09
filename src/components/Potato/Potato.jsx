@@ -5,28 +5,27 @@ export default class Potato extends React.Component {
     return (
       <div className="potato">
         <figure>
+          <div className="border"></div>
           <img
             src={require("../../imgPotato/items.jpg")}
             alt="Необходимые предметы"
           />
           <figcaption>
-            <div>
-              <p>Вот что нам понадобится:</p>
-              <p> 1) Картофель среднего размера, лучше больше</p>
-              <p>
-                2) Нож (если есть специальный нож для вырезания сердцевины, то
-                это будет хорошим плюсом)
-              </p>
-              <p>3) Табак для кальяна </p>
-              <p>4) Зубочистки</p>
-              <p>5) Уголь кокосовый для кальяна</p>
-              <p>6) Фольга или Колауд</p>
-              <p>7) Салфетки или бумажные полотенца</p>
-            </div>
+            <p>Вот что нам понадобится:</p>
+            <p> 1) Картофель среднего размера, лучше больше</p>
+            <p>
+              2) Нож (если есть специальный нож для вырезания сердцевины, то это
+              будет хорошим плюсом)
+            </p>
+            <p>3) Табак для кальяна </p>
+            <p>4) Зубочистки</p>
+            <p>5) Уголь кокосовый для кальяна</p>
+            <p>6) Фольга или Колауд</p>
+            <p>7) Салфетки или бумажные полотенца</p>
           </figcaption>
         </figure>
-
         <figure>
+          <div className="border"></div>
           <img
             src={require("../../imgPotato/hole.jpg")}
             alt="Делаем отверстие в картошке"
@@ -42,6 +41,7 @@ export default class Potato extends React.Component {
           </figcaption>
         </figure>
         <figure>
+          <div className="border"></div>
           <img
             src={require("../../imgPotato/establish.jpg")}
             alt="Решетка из зубочисток"
@@ -55,6 +55,7 @@ export default class Potato extends React.Component {
           </figcaption>
         </figure>
         <figure>
+          <div className="border"></div>
           <img
             src={require("../../imgPotato/plant.jpg")}
             alt="Укладывает табак и одеваем на шахту"
@@ -68,6 +69,7 @@ export default class Potato extends React.Component {
           </figcaption>
         </figure>
         <figure>
+          <div className="border"></div>
           <img
             src={require("../../imgPotato/try.jpg")}
             alt="Прогреваем и пробуем"
@@ -85,6 +87,7 @@ export default class Potato extends React.Component {
           </figcaption>
         </figure>
         <figure>
+          <div className="border"></div>
           <img
             src={require("../../imgPotato/tasting.jpg")}
             alt="Тестируем на людях"
@@ -92,6 +95,12 @@ export default class Potato extends React.Component {
           <figcaption>
             <p>
               Ну, тут даже ярые противники курения не смогут остаться в стороне)
+            </p>
+            <p>Не драники и не фри - так картошку еще не использовали.</p>
+            <p>На вкус это...странно.</p>
+            <p>
+              Спустя минут 20 активного курения появляется аромат печеной
+              картошки, что довольно вкусно...
             </p>
           </figcaption>
         </figure>

@@ -1,0 +1,25 @@
+.loading {
+  color: rgb(12, 73, 0);
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+
+  svg {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    animation-name: loading;
+    animation-duration: 1.54s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

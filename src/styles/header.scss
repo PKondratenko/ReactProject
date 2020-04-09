@@ -1,26 +1,41 @@
+@import "./mixins.scss";
+
 body {
-  margin: 0;
-  padding: 0;
+  @include indent(0, 0);
   width: 60%;
   margin: auto;
-  background-color: rgb(204, 203, 203);
+  background: linear-gradient(
+    to top left,
+    rgba(255, 0, 0, 0.705),
+    rgb(235, 231, 38),
+    rgb(86, 204, 56)
+  );
 }
 .header {
-  background-color: rgb(204, 203, 203);
   height: 64px;
   width: 100%;
-  ul {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0;
-    padding: 0;
+  nav ul {
+    @include flex;
+    justify-content: flex-start;
+    list-style: none;
     li {
-      list-style: none;
-      margin: 10px;
-      padding: 10px;
+      margin-right: 20px;
       a {
         text-decoration: none;
+        color: rgb(29, 53, 10);
+        font-family: sans-serif;
+      }
+    }
+  }
+}
+nav {
+  ul {
+    & > li {
+      a {
+        &.active {
+          color: rgba(218, 255, 189, 0.719);
+        }
+        @include hover-color(rgba(41, 83, 23, 0.76));
       }
     }
   }

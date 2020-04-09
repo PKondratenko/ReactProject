@@ -1,4 +1,8 @@
 import React from "react";
+import Loading from "../Loading/";
+import Error from "../Error/";
+import LoginGitHub from "../LoginGitHub/LoginGitHub";
+import LGH from "../LoginGitHub/LGH";
 
 export default function Login(props) {
   const [username, setUsername] = React.useState("");
@@ -8,8 +12,12 @@ export default function Login(props) {
     event.preventDefault();
     props.login(username, password);
   };
+  if (props.isLoading) {
+    return <Loading text="Posts are loading... Please wait." />;
+  }
   return (
     <form onSubmit={onSubmit}>
+      <div>{props.error && <Error error={props.error} />}</div>
       <div>
         <label htmlFor="username">UserName</label>
         <input
@@ -32,6 +40,9 @@ export default function Login(props) {
       </div>
       <div>
         <button type="submit">Login</button>
+      </div>
+      <div>
+        <LoginGitHub />
       </div>
     </form>
   );

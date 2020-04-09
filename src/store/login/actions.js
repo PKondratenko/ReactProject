@@ -1,5 +1,5 @@
 import { sendLoginRequest } from "../../api";
-import { history } from "../../utils/history";
+import { history } from "../../utils";
 
 export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
 export const SET_LOGIN_LOADING = "SET_LOGIN_LOADING";
@@ -12,7 +12,7 @@ export const login = (username, password) => {
       const loginData = await sendLoginRequest(username, password);
       localStorage.setItem("TOKEN", loginData.token);
       dispatch(loginSuccess());
-      history.push("/");
+      history.push("/game");
     } catch (error) {
       dispatch(setLoginError(error));
     } finally {
